@@ -125,3 +125,5 @@ urlpatterns = [
 # 미디어 파일 제공 (개발 환경에서만)
 if settings.DEBUG:
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+# 정적 파일 제공 (개발 환경에서만)
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
